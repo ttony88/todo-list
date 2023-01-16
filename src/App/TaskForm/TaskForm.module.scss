@@ -1,0 +1,18 @@
+@import '../../common';
+
+.form{
+    padding: 20px 0 0 0;
+    text-align: center;
+    input{
+        margin: 0 15px 0 0;
+        padding: 0 10px;
+        width: 70%;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        border-color: #ffffff;
+    }
+    button{
+        @include button(rgb(185, 241, 243));
+    }
+}

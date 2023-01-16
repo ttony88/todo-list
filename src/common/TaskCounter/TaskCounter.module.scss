@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.taskCounter{
+    display: flex;
+    align-items: center;
+    margin: 0 10% 0 0;
+    height: 5vh;
+    background-color: #fff;
+    border-radius: 20px;
+    flex: 0 1 40%;
+    .countTasks{
+        flex: 0 1 10%;
+        margin: 0 3% 0 0;
+        .circle{
+            display: flex;
+            height: 4vh;
+            width: 4vh;
+            justify-content: center;
+            align-items: center;
+            background-color: $basicColor;
+            border-radius: 50%;
+            float: right;
+        }
+    }
+    .title{ 
+        margin: 0 0 0 3%;
+        flex: 0 1 90%;
+    }
+}
+
