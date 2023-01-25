@@ -1,18 +1,34 @@
 @import '../../common';
 
 .form{
-    padding: 20px 0 0 0;
-    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    @media screen and (max-width : 510px) {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    
     input{
         margin: 0 15px 0 0;
         padding: 0 10px;
-        width: 70%;
+        width: 100%;
         height: 20px;
         border-radius: 10px;
         font-size: 16px;
         border-color: #ffffff;
+        @media screen and (max-width : 510px) {
+            margin: 0 15px 15px;
+        }
     }
+    
     button{
         @include button(rgb(185, 241, 243));
+        @media screen and (max-width : 510px) {
+            width: 150px;
+            height: 40px;
+        }
     }
 }

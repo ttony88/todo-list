@@ -11,6 +11,9 @@ const tasksReducer = (state=initialState, action) => {
 
     switch (action.type) {
         case SET_TASK:
+            let tasks = document.getElementById("tasks")
+            tasks.scrollTop = tasks.scrollHeight
+
             const task = {
                 id: Date.now(),
                 isCompleted: false,

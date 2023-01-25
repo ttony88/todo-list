@@ -1,18 +1,16 @@
 import { Field, reduxForm } from "redux-form"
 import styles from './TaskForm.module.scss'
-import { required } from '../../utils/validators'
+import { required, maxLength50 } from '../../utils/validators'
+import { Input } from "../FormControl/FormControl"
 
 const TaskForm = (props) => {
-    const {handleSubmit, error} = props
+    console.log(props)
+    const {handleSubmit} = props
 
     return(
         <form className={styles.form} onSubmit={handleSubmit}>
-            <div>
-                {error && <div>{error}</div>}
-                <Field name='taskText' component='input' type='text' validate={[required]}/>
-                <button type='submit'>Добавить</button>
-            </div>
-            
+            <Field name='taskText' component={Input} type='text' validate={[required, maxLength50]}/>
+            <button type='submit'>Добавить</button>
         </form>
     )
 }

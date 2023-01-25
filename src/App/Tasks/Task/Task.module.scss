@@ -2,17 +2,18 @@
 
 .task{
     display: flex;
-    align-items: center;
     width: 80%;
-    height: 5vh;
+    min-height: 5vh;
     border-radius: 5px;
     border: 1px solid #000;
     box-shadow: 2px 2px 2px #000;
+    word-break: break-all;
     input{
-        flex: 1 0 5%;
+        flex: 0 1 5%;
     }
     .button{
-        flex: 1 0 10%;
+        flex: 0 1 10%;
+        margin: 6px;
         button{
             width: 80%;
             height: 4vh;
@@ -24,10 +25,12 @@
         }
     }
     .taskText{
-        flex: 1 0 85%;
+        flex: 0 1 85%;
+        margin: 10px 0;
     }
     .completedTask{
-        flex: 1 0 85%;
+        flex: 0 1 85%;
+        margin: 10px 0;
         color:darkgray;
         text-decoration: line-through;
     }
@@ -53,7 +56,7 @@
     display: block;
     width: 2vh;
     height: 2vh;
-    margin: 0 10px;
+    margin: 12px;
     border: 1px solid #ddd;
 }
 .checkBoxActive{
